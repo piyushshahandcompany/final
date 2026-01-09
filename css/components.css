@@ -68,3 +68,120 @@ p {
   background-color: var(--color-navy);
   color: #ffffff;
 }
+/* ================================
+   HEADER & NAVIGATION
+   ================================ */
+
+.site-header {
+  border-bottom: 1px solid var(--color-border-light);
+  background-color: #ffffff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-sm);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.brand-tagline {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+}
+
+/* ================================
+   NAVIGATION
+   ================================ */
+
+.nav {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  padding-bottom: 4px;
+}
+
+/* Underline animation */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-gold-muted);
+  transition: width var(--transition-base);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ================================
+   HAMBURGER (CSS ONLY)
+   ================================ */
+
+.nav-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-navy);
+}
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 900px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 72px;
+    right: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--space-md);
+    border-top: 1px solid var(--color-border-light);
+    display: none;
+  }
+
+  .nav-toggle:checked + .hamburger + .nav {
+    display: flex;
+  }
+}
