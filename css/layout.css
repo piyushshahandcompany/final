@@ -1,0 +1,51 @@
+/* ================================
+   LAYOUT SYSTEM
+   ================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--container-lg);
+  margin-inline: auto;
+  padding-inline: var(--space-sm);
+}
+
+.container--narrow {
+  max-width: var(--container-md);
+}
+
+.section {
+  padding-block: var(--space-xl);
+}
+
+.section--light {
+  background-color: var(--color-bg-secondary);
+}
+
+.section--navy {
+  background-color: var(--color-bg-navy);
+  color: var(--color-text-inverse);
+}
+
+/* ================================
+   SIMPLE GRID SYSTEM
+   ================================ */
+
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
