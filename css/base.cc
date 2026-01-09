@@ -1,0 +1,72 @@
+/* ================================
+   BASE RESET & DESIGN TOKENS
+   ================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ================================
+   CSS VARIABLES (LOCKED)
+   ================================ */
+
+:root {
+
+  /* Brand Colours */
+  --color-navy: #0e2a3b;
+  --color-navy-dark: #0a1f2c;
+  --color-slate: #4a647a;
+  --color-gold-muted: #bfa36a;
+
+  /* Backgrounds */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f7f9fb;
+  --color-bg-navy: var(--color-navy);
+
+  /* Text */
+  --color-text-primary: #1e2933;
+  --color-text-secondary: #4b5f73;
+  --color-text-inverse: #ffffff;
+
+  /* Borders */
+  --color-border-light: #e3e8ee;
+  --color-border-dark: #c6d0da;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Spacing Scale (8px rhythm) */
+  --space-xxs: 0.25rem; /* 4px */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 1rem;     /* 16px */
+  --space-md: 1.5rem;   /* 24px */
+  --space-lg: 2.5rem;   /* 40px */
+  --space-xl: 4rem;     /* 64px */
+  --space-xxl: 6rem;    /* 96px */
+
+  /* Container Widths */
+  --container-sm: 720px;
+  --container-md: 960px;
+  --container-lg: 1200px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.35s ease;
+}
