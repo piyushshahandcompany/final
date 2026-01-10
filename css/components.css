@@ -250,3 +250,11 @@ h2::after {
 .section--light .grid-3 > div {
   background-color: #ffffff;
 }
+.nav a {
+  color: var(--color-navy);
+  font-weight: 500;
+}
+
+.site-header {
+  background-color: #ffffff;
+}
