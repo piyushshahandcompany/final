@@ -78,18 +78,32 @@ footer p {
   font-size: 0.85rem;
 }
 /* ================================
-   HERO (FORCED STYLING)
+   HERO – PREMIUM CONSULTING STYLE
    ================================ */
 
 .hero {
-  background-color: #ffffff;
+  background-color: var(--color-navy);
+  color: #ffffff;
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
 }
 
 .hero h1 {
-  color: var(--color-navy);
+  color: #ffffff;
 }
 
 .hero p {
+  color: #d7e1ea;
   font-size: 1.05rem;
-  color: var(--color-text-secondary);
+  max-width: 60ch;
+}
+
+.hero .btn-primary {
+  background-color: var(--color-gold-muted);
+  border-color: var(--color-gold-muted);
+  color: #1e2933;
+}
+
+.hero .btn-primary:hover {
+  background-color: #a88b55;
 }
