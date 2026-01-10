@@ -229,3 +229,6 @@ h2::after {
   font-size: 0.95rem;
   color: var(--color-text-secondary);
 }
+.nav a {
+  color: var(--color-navy);
+}
