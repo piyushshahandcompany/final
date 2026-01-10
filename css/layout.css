@@ -107,3 +107,24 @@ footer p {
 .hero .btn-primary:hover {
   background-color: #a88b55;
 }
+/* ================================
+   SECTION FRAMING
+   ================================ */
+
+.section {
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: transparent;
+}
+
+.section--light::before {
+  background-color: var(--color-gold-muted);
+}
