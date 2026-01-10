@@ -213,14 +213,19 @@ p {
    GOLD ACCENT RULES
    ================================ */
 
+h2 {
+  color: var(--text-dark);
+}
+
 h2::after {
   content: "";
   display: block;
-  width: 48px;
-  height: 2px;
+  width: 64px;
+  height: 3px;
   margin-top: 0.75rem;
-  background-color: var(--color-gold-muted);
+  background-color: var(--gold-accent);
 }
+
 /* ================================
    TRUST METRICS
    ================================ */
