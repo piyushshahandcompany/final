@@ -49,10 +49,16 @@
 .hero {
   background: linear-gradient(
     135deg,
-    #0e2a3b 0%,
-    #1b3f55 100%
+    var(--blue-main) 0%,
+    var(--blue-soft) 100%
   );
+  min-height: 82vh;              /* was ~70–75vh */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 0 7rem;          /* IMPORTANT */
 }
+
 
 .hero-inner {
   max-width: 900px;
