@@ -16,7 +16,7 @@
   <meta property="og:description" content="25+ years of professional accounting, audit and taxation services with PAN India reach.">
   <meta property="og:type" content="website">
 
-  <!-- FONTS (LOCKED) -->
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -27,8 +27,7 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/animations.css">
 
-
-  <!-- SCHEMA: ORGANISATION + LOCAL BUSINESS -->
+  <!-- SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,23 +49,22 @@
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header class="site-header">
-  <div class="container header-inner">
+  <div class="header-inner">
 
     <a href="index.html" class="brand">
-  <img src="assets/logo.png" alt="Piyush Shah and Company" height="48">
-</a>
-
-    <a href="index.html" class="brand">
-      <span class="brand-name">Piyush Shah and Company</span>
-      <span class="brand-tagline">Chartered Accountants</span>
+      <img src="assets/logo.png" alt="Piyush Shah and Company" height="44">
+      <div>
+        <span class="brand-name">Piyush Shah and Company</span>
+        <span class="brand-tagline">Chartered Accountants</span>
+      </div>
     </a>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </label>
 
     <nav class="nav">
@@ -80,47 +78,50 @@
   </div>
 </header>
 
-<section class="hero reveal">
+<!-- ================= HERO ================= -->
+
+<section class="hero hero-center reveal">
   <div class="hero-inner">
-    <div class="hero-content">
-      <h1>
-        Trusted Chartered Accountants<br>
-        with 25+ Years of Professional Excellence
-      </h1>
 
-      <p>
-        Piyush Shah and Company is a Mumbai-based Chartered Accountant firm
-        providing comprehensive accounting, taxation, audit and compliance
-        services with a PAN India reach. Our practice is built on professional
-        integrity, technical depth, and long-term client relationships.
-      </p>
+    <h1>
+      Leading Chartered Accountant in Mumbai<br>
+      with 25+ Years of Experience
+    </h1>
 
-      <a href="contact.html" class="btn btn-primary">
-        Schedule a Professional Consultation
+    <p>
+      Piyush Shah and Company is a professionally managed Chartered Accountant
+      firm based in Masjid Bunder, Mumbai, providing expert taxation, audit,
+      accounting, and regulatory compliance services across Maharashtra and India.
+    </p>
+
+    <div class="hero-actions">
+      <a href="services.html" class="btn btn-primary">
+        Explore Our Services
+      </a>
+      <a href="contact.html" class="btn btn-outline">
+        Schedule Consultation
       </a>
     </div>
+
   </div>
 </section>
 
+<!-- ================= TRUST METRICS ================= -->
 
-  <section class="section section--light">
- <div class="container grid grid-3 reveal-stagger">
-
+<section class="section section--light">
+  <div class="container container--narrow grid grid-3 reveal-stagger">
 
     <div class="card">
-
       <h3>25+ Years</h3>
       <p>Of professional experience in taxation, audit, and compliance.</p>
     </div>
 
     <div class="card">
-
       <h3>PAN India</h3>
       <p>Serving clients across India through structured and remote delivery.</p>
     </div>
 
     <div class="card">
-
       <h3>Mumbai Based</h3>
       <p>Located at Masjid Bunder, Mumbai — a traditional commercial hub.</p>
     </div>
@@ -128,10 +129,10 @@
   </div>
 </section>
 
+<!-- ================= ABOUT ================= -->
+
 <section class="section reveal">
-
- <div class="container container--narrow">
-
+  <div class="container container--narrow">
 
     <h2>About Piyush Shah and Company</h2>
 
@@ -152,13 +153,12 @@
   </div>
 </section>
 
+<!-- ================= CORE VALUES ================= -->
+
 <section class="section section--light">
   <div class="container container--narrow grid grid-3 reveal-stagger">
 
-
-
     <div class="card">
-
       <h3>Integrity</h3>
       <p>
         We uphold the highest standards of professional ethics and regulatory
@@ -167,7 +167,6 @@
     </div>
 
     <div class="card">
-
       <h3>Expertise</h3>
       <p>
         Our advice is grounded in deep technical knowledge and continuous
@@ -175,8 +174,7 @@
       </p>
     </div>
 
- <div class="card">
-
+    <div class="card">
       <h3>Long-Term Perspective</h3>
       <p>
         We focus on sustainable solutions that support long-term business and
@@ -187,8 +185,9 @@
   </div>
 </section>
 
- <section class="section reveal">
+<!-- ================= CTA ================= -->
 
+<section class="section reveal">
   <div class="container container--narrow">
 
     <h2>Professional Advisory Backed by Experience</h2>
@@ -204,7 +203,10 @@
 
   </div>
 </section>
-  <footer>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
   <div class="container grid grid-3">
 
     <div>
@@ -245,7 +247,7 @@
   </div>
 </footer>
 
-  <script>
+<script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
