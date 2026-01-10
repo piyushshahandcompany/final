@@ -63,3 +63,17 @@
 .section:first-of-type p {
   font-size: 1.05rem;
 }
+/* ================================
+   FOOTER BASE
+   ================================ */
+
+footer {
+  background-color: var(--color-navy);
+  color: #ffffff;
+  padding: var(--space-lg) 0;
+}
+
+footer p {
+  color: #d7e1ea;
+  font-size: 0.85rem;
+}
