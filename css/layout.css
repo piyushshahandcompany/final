@@ -98,3 +98,75 @@
   }
 }
 
+/* =====================================
+   MOBILE HAMBURGER MENU – FINAL FIX
+   ===================================== */
+
+/* Header positioning */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+}
+
+/* Header layout */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Hide checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 2px;
+  background-color: #0e2a3b;
+  display: block;
+}
+
+/* Desktop nav */
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Mobile styles */
+@media (max-width: 900px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.25rem;
+    border-top: 1px solid #dde6ed;
+    display: none;
+  }
+
+  /* Toggle menu */
+  .nav-toggle:checked + .hamburger + .nav {
+    display: flex;
+  }
+}
