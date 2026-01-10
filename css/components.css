@@ -140,27 +140,46 @@
 }
 
 /* ================================
-   FOOTER
+   FOOTER – FINAL POLISH
    ================================ */
 
-footer {
-  background-color: var(--blue-main);
-  color: var(--text-light);
-  padding: 4rem 0 2rem;
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 }
 
-footer h3 {
-  color: #ffffff;
+.footer-col h3 {
+  margin-bottom: 1rem;
 }
 
-footer p,
-footer a {
-  color: #dbe5ec;
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
 }
 
-footer a:hover {
-  color: var(--gold-accent);
+.footer-item svg {
+  width: 16px;
+  height: 16px;
+  fill: #dbe5ec;
+  flex-shrink: 0;
 }
+
+.footer-bottom {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #c7d3dc;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .hero-actions {
   display: flex;
