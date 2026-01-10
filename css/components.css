@@ -14,10 +14,15 @@ h1 {
   margin-bottom: var(--space-md);
 }
 
-h2 {
-  font-size: 2.2rem;
-  margin-bottom: var(--space-sm);
+h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-top: 0.75rem;
+  background-color: var(--color-gold-muted);
 }
+
 
 h3 {
   font-size: 1.6rem;
