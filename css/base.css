@@ -27,8 +27,9 @@ body {
 
 :root {
   /* Brand colours */
-  --blue-main: #2f4858;
-  --blue-soft: #4f6d7a;
+ --blue-main: #0e2a3b;   /* Deep navy – authority */
+--blue-soft: #1b3f55;   /* Controlled gradient */
+
   --gold-accent: #d4b36a;
 
   /* Backgrounds */
