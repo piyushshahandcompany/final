@@ -26,27 +26,30 @@ body {
    CSS VARIABLES (LOCKED)
    ================================ */
 
+/* ================================
+   MODERN PROFESSIONAL COLOUR SYSTEM
+   ================================ */
+
 :root {
 
-  /* Brand Colours */
-  --color-navy: #0e2a3b;
-  --color-navy-dark: #0a1f2c;
-  --color-slate: #4a647a;
-  --color-gold-muted: #bfa36a;
+  /* Primary Palette */
+  --blue-main: #2f4858;
+  --blue-soft: #4f6d7a;
+  --gold-accent: #d4b36a;
 
   /* Backgrounds */
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f7f9fb;
-  --color-bg-navy: var(--color-navy);
+  --bg-white: #ffffff;
+  --bg-soft: #f9fbfc;
 
   /* Text */
-  --color-text-primary: #1e2933;
-  --color-text-secondary: #4b5f73;
-  --color-text-inverse: #ffffff;
+  --text-dark: #1f2f3a;
+  --text-muted: #506a7b;
+  --text-light: #e8eff4;
 
-  /* Borders */
-  --color-border-light: #e3e8ee;
-  --color-border-dark: #c6d0da;
+  /* Borders & Shadow */
+  --border-soft: #dde6ed;
+  --shadow-soft: 0 18px 48px rgba(0,0,0,0.14);
+}
 
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, serif;
