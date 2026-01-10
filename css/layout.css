@@ -140,34 +140,28 @@ footer p {
   background-color: var(--slate-bg);
 }
 /* ================================
-   FINAL FOOTER
+   FOOTER – MODERN PROFESSIONAL
    ================================ */
 
 footer {
-  background-color: var(--navy-main);
-  color: #e0e8ef;
+  background-color: var(--blue-main);
+  color: var(--text-light);
   padding: 4rem 0 2rem;
 }
 
 footer h3 {
   color: #ffffff;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
 }
 
-footer p {
-  color: #c9d6e2;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
+footer p,
 footer a {
-  color: #c9d6e2;
+  color: #dbe5ec;
 }
 
 footer a:hover {
   color: var(--gold-accent);
 }
+
 /* ================================
    HERO CONTENT CLARITY FIX
    ================================ */
