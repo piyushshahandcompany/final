@@ -47,11 +47,11 @@
    ================================ */
 
 .hero {
-  background: linear-gradient(135deg, var(--blue-main), var(--blue-soft));
-  min-height: 75vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #0e2a3b 0%,
+    #1b3f55 100%
+  );
 }
 
 .hero-inner {
@@ -61,11 +61,10 @@
 }
 
 .hero h1 {
-  font-family: var(--font-heading);
   color: #ffffff;
-  font-size: clamp(2.4rem, 4vw, 3.2rem);
-  margin-bottom: 1.25rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
+
 
 .hero p {
   color: var(--text-light);
