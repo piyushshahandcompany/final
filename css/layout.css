@@ -186,3 +186,6 @@ footer a:hover {
 .hero p {
   color: #e8f0f6;
 }
+.hero-content > * + * {
+  margin-top: 1.25rem;
+}
