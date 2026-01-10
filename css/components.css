@@ -327,3 +327,22 @@ h2::after {
 .nav a:hover {
   color: var(--blue-main);
 }
+
+/* ================================
+   MODERN CONTENT CARDS
+   ================================ */
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-soft);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.card h3 {
+  color: var(--text-dark);
+}
+
+.card p {
+  color: var(--text-muted);
+}
