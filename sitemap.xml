@@ -2,28 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://yourusername.github.io/</loc>
-    <priority>1.00</priority>
+    <loc>https://www.piyushshahandcompany.com/</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://yourusername.github.io/services.html</loc>
-    <priority>0.85</priority>
+    <loc>https://www.piyushshahandcompany.com/services.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://yourusername.github.io/founder.html</loc>
-    <priority>0.80</priority>
+    <loc>https://www.piyushshahandcompany.com/founder.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://yourusername.github.io/industries.html</loc>
-    <priority>0.80</priority>
+    <loc>https://www.piyushshahandcompany.com/industries.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://yourusername.github.io/contact.html</loc>
-    <priority>0.75</priority>
+    <loc>https://www.piyushshahandcompany.com/contact.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
