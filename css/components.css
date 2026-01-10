@@ -213,3 +213,16 @@ h2::after {
   margin-top: 0.75rem;
   background-color: var(--color-gold-muted);
 }
+/* ================================
+   TRUST METRICS
+   ================================ */
+
+.grid-3 > div h3 {
+  color: var(--color-navy);
+  font-size: 1.4rem;
+}
+
+.grid-3 > div p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
