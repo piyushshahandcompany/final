@@ -302,3 +302,28 @@ h2::after {
 .brand img {
   display: block;
 }
+/* ================================
+   HEADER – MODERN PROFESSIONAL
+   ================================ */
+
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.brand-name {
+  color: var(--text-dark);
+}
+
+.brand-tagline {
+  color: var(--text-muted);
+}
+
+.nav a {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--blue-main);
+}
