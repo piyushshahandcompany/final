@@ -49,3 +49,14 @@
     grid-template-columns: 1fr;
   }
 }
+/* ================================
+   HERO EMPHASIS
+   ================================ */
+
+.section:first-of-type h1 {
+  color: var(--color-navy);
+}
+
+.section:first-of-type p {
+  font-size: 1.05rem;
+}
