@@ -78,14 +78,17 @@ footer p {
   font-size: 0.85rem;
 }
 /* ================================
-   HERO – PREMIUM CONSULTING STYLE
+   HERO – STRONG PROFESSIONAL PRESENCE
    ================================ */
 
 .hero {
-  background-color: var(--color-navy);
+  background: linear-gradient(
+    135deg,
+    var(--navy-main),
+    var(--navy-soft)
+  );
   color: #ffffff;
-  padding-top: var(--space-xxl);
-  padding-bottom: var(--space-xxl);
+  padding: 6rem 0;
 }
 
 .hero h1 {
@@ -93,27 +96,31 @@ footer p {
 }
 
 .hero p {
-  color: #d7e1ea;
-  font-size: 1.05rem;
+  color: #e0e8ef;
+  font-size: 1.1rem;
   max-width: 60ch;
 }
 
 .hero .btn-primary {
-  background-color: var(--color-gold-muted);
-  border-color: var(--color-gold-muted);
+  background-color: var(--gold-accent);
+  border-color: var(--gold-accent);
   color: #1e2933;
+  font-weight: 600;
 }
 
 .hero .btn-primary:hover {
   background-color: #a88b55;
 }
+
 /* ================================
    SECTION FRAMING
    ================================ */
 
 .section {
-  position: relative;
+  padding: 5rem 0;
+  background-color: #ffffff;
 }
+
 
 .section::before {
   content: "";
@@ -125,6 +132,6 @@ footer p {
   background-color: transparent;
 }
 
-.section--light::before {
-  background-color: var(--color-gold-muted);
+.section--light {
+  background-color: var(--slate-bg);
 }
