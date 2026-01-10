@@ -86,6 +86,15 @@
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding: 4rem 0;
+    padding: 5rem 0 5.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero p {
+    margin-bottom: 2.25rem;
   }
 }
+
