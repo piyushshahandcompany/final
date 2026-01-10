@@ -287,3 +287,18 @@ h2::after {
   border-top: 1px solid var(--border-soft);
   border-bottom: 1px solid var(--border-soft);
 }
+/* ================================
+   TEXT LOGO POLISH
+   ================================ */
+
+.brand-name {
+  letter-spacing: 0.03em;
+}
+
+.brand-tagline {
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+}
+.brand img {
+  display: block;
+}
