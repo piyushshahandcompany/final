@@ -62,6 +62,32 @@
   width: 100%;
 }
 
+/* Hide hamburger checkbox (CRITICAL) */
+.nav-toggle {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-toggle:checked + .hamburger + .nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* ================================
    BUTTONS
    ================================ */
