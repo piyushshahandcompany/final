@@ -168,3 +168,10 @@ footer a:hover {
   gap: 1.25rem;
   margin-top: 0.5rem;
 }
+
+/* Large CTA button */
+.btn-lg {
+  padding: 1rem 2.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
