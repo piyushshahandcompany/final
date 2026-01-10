@@ -81,8 +81,8 @@ p {
    ================================ */
 
 .site-header {
-  border-bottom: 1px solid var(--color-border-light);
   background-color: #ffffff;
+  border-bottom: 1px solid #e1e8ef;
 }
 
 .header-inner {
