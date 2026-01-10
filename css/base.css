@@ -70,3 +70,15 @@ body {
   --transition-fast: 0.2s ease;
   --transition-base: 0.35s ease;
 }
+/* ================================
+   LINK RESET (CRITICAL)
+   ================================ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
