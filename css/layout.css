@@ -164,3 +164,25 @@ footer a {
 footer a:hover {
   color: var(--gold-accent);
 }
+/* ================================
+   HERO CONTENT CLARITY FIX
+   ================================ */
+
+.hero {
+  position: relative;
+}
+
+.hero-content {
+  background: rgba(14, 42, 59, 0.65);
+  padding: 3rem 3.5rem;
+  border-left: 6px solid var(--gold-accent);
+  max-width: 720px;
+}
+
+.hero h1 {
+  color: #ffffff;
+}
+
+.hero p {
+  color: #e8f0f6;
+}
