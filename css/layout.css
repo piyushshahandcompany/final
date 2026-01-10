@@ -77,3 +77,19 @@ footer p {
   color: #d7e1ea;
   font-size: 0.85rem;
 }
+/* ================================
+   HERO (FORCED STYLING)
+   ================================ */
+
+.hero {
+  background-color: #ffffff;
+}
+
+.hero h1 {
+  color: var(--color-navy);
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+}
