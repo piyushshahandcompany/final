@@ -135,3 +135,32 @@ footer p {
 .section--light {
   background-color: var(--slate-bg);
 }
+/* ================================
+   FINAL FOOTER
+   ================================ */
+
+footer {
+  background-color: var(--navy-main);
+  color: #e0e8ef;
+  padding: 4rem 0 2rem;
+}
+
+footer h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  color: #c9d6e2;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #c9d6e2;
+}
+
+footer a:hover {
+  color: var(--gold-accent);
+}
