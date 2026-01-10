@@ -191,3 +191,14 @@ footer a:hover {
 .hero-content > * + * {
   margin-top: 1.25rem;
 }
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 2rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+}
