@@ -82,3 +82,20 @@ a {
 a:hover {
   text-decoration: none;
 }
+/* ================================
+   PROFESSIONAL COLOUR SYSTEM (FINAL)
+   ================================ */
+
+:root {
+  --navy-main: #0e2a3b;
+  --navy-soft: #14384f;
+  --slate-bg: #f3f6f9;
+  --slate-card: #ffffff;
+  --gold-accent: #bfa36a;
+
+  --text-dark: #1e2933;
+  --text-muted: #5b6f82;
+
+  --border-soft: #d6dde5;
+  --shadow-soft: 0 8px 24px rgba(0,0,0,0.06);
+}
