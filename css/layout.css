@@ -54,17 +54,7 @@
     grid-template-columns: 1fr;
   }
 }
-/* ================================
-   HERO EMPHASIS
-   ================================ */
 
-.section:first-of-type h1 {
-  color: var(--color-navy);
-}
-
-.section:first-of-type p {
-  font-size: 1.05rem;
-}
 /* ================================
    FOOTER BASE
    ================================ */
@@ -163,27 +153,41 @@ footer a:hover {
 }
 
 /* ================================
-   HERO CONTENT CLARITY FIX
+   HERO – FINAL ALIGNED STRUCTURE
    ================================ */
 
 .hero {
-  position: relative;
+  background: linear-gradient(135deg, var(--blue-main), var(--blue-soft));
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .hero-content {
-  background: rgba(14, 42, 59, 0.65);
-  padding: 3rem 3.5rem;
+  background-color: var(--bg-soft);
+  padding: 3.5rem 4rem;
   border-left: 6px solid var(--gold-accent);
   max-width: 720px;
+  box-shadow: var(--shadow-soft);
 }
 
 .hero h1 {
-  color: #ffffff;
+  color: var(--text-dark);
 }
 
 .hero p {
-  color: #e8f0f6;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin: 1.25rem 0 2rem;
 }
+
 .hero-content > * + * {
   margin-top: 1.25rem;
 }
