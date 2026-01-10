@@ -1,145 +1,60 @@
 /* ================================
-   TYPOGRAPHY SYSTEM
-   ================================ */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  color: var(--color-navy);
-  line-height: 1.25;
-}
-
-h1 {
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  margin-bottom: var(--space-md);
-}
-
-h2::after {
-  content: "";
-  display: block;
-  width: 56px;
-  height: 3px;
-  margin-top: 0.75rem;
-  background-color: var(--color-gold-muted);
-}
-
-
-h3 {
-  font-size: 1.6rem;
-  margin-bottom: var(--space-xs);
-}
-
-p {
-  margin-bottom: var(--space-sm);
-  color: var(--color-text-secondary);
-  max-width: 70ch;
-}
-
-/* ================================
-   BUTTON SYSTEM (BANK STYLE)
-   ================================ */
-
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.75rem;
-  font-size: 0.95rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  border-radius: 2px;
-  border: 1px solid transparent;
-  transition: all var(--transition-base);
-  cursor: pointer;
-}
-
-/* Primary Button */
-.btn-secondary {
-  background-color: transparent;
-  border: 1px solid var(--color-gold-muted);
-  color: var(--color-navy);
-}
-
-.btn-secondary:hover {
-  background-color: var(--color-gold-muted);
-  color: #ffffff;
-}
-
-
-/* Secondary Button */
-.btn-secondary {
-  background-color: transparent;
-  border-color: var(--color-navy);
-  color: var(--color-navy);
-}
-
-.btn-secondary:hover {
-  background-color: var(--color-navy);
-  color: #ffffff;
-}
-/* ================================
-   HEADER & NAVIGATION
+   HEADER & NAV
    ================================ */
 
 .site-header {
   background-color: #ffffff;
-  border-bottom: 1px solid #e1e8ef;
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .header-inner {
-  max-width: 1200px;
+  max-width: var(--container-lg);
   margin: 0 auto;
   padding: 1rem;
-}
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .brand {
   display: flex;
-  flex-direction: column;
-  text-decoration: none;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .brand-name {
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: var(--color-navy);
 }
 
 .brand-tagline {
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
   text-transform: uppercase;
 }
 
-/* ================================
-   NAVIGATION
-   ================================ */
-
 .nav {
   display: flex;
-  gap: var(--space-lg);
+  gap: 2rem;
 }
 
 .nav a {
-  position: relative;
-  text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--color-text-primary);
-  padding-bottom: 4px;
+  color: var(--text-dark);
+  position: relative;
 }
 
-/* Underline animation */
 .nav a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -4px;
   width: 0;
-  height: 1px;
-  background-color: var(--color-gold-muted);
+  height: 2px;
+  background-color: var(--gold-accent);
   transition: width var(--transition-base);
 }
 
@@ -148,194 +63,38 @@ p {
 }
 
 /* ================================
-   HAMBURGER (CSS ONLY)
+   BUTTONS
    ================================ */
 
-.nav-toggle {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 24px;
-  height: 2px;
-  background-color: var(--color-navy);
-}
-
-/* ================================
-   MOBILE
-   ================================ */
-
-@media (max-width: 900px) {
-
-  .hamburger {
-    display: flex;
-  }
-
-  .nav {
-    position: absolute;
-    top: 72px;
-    right: 0;
-    background-color: #ffffff;
-    flex-direction: column;
-    width: 100%;
-    padding: var(--space-md);
-    border-top: 1px solid var(--color-border-light);
-    display: none;
-  }
-
-  .nav-toggle:checked + .hamburger + .nav {
-    display: flex;
-  }
-}
-/* ================================
-   BRAND VISUAL STRENGTH
-   ================================ */
-
-.site-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid var(--color-border-light);
-}
-
-.brand-name {
-  color: var(--color-navy);
-}
-
-.brand-tagline {
-  color: var(--color-slate);
-}
-/* ================================
-   GOLD ACCENT RULES
-   ================================ */
-
-h2 {
-  color: var(--text-dark);
-}
-
-h2::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 3px;
-  margin-top: 0.75rem;
-  background-color: var(--gold-accent);
-}
-
-/* ================================
-   TRUST METRICS
-   ================================ */
-
-.grid-3 > div h3 {
-  color: var(--color-navy);
-  font-size: 1.4rem;
-}
-
-.grid-3 > div p {
+.btn {
+  padding: 0.75rem 1.75rem;
   font-size: 0.95rem;
-  color: var(--color-text-secondary);
-}
-.nav a {
-  color: var(--color-navy);
-}
-/* ================================
-   TRUST METRIC CARDS
-   ================================ */
-
-.grid-3 > div {
-  background-color: #ffffff;
-  padding: var(--space-md);
-  border: 1px solid var(--color-border-light);
+  border-radius: 2px;
+  border: 1px solid transparent;
+  transition: all var(--transition-base);
 }
 
-.section--light .grid-3 > div {
-  background-color: #ffffff;
-}
-.nav a {
-  color: var(--navy-main);
-  font-weight: 500;
-}
-
-.site-header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-}
-
-/* ================================
-   CONTENT CARDS (PREMIUM)
-   ================================ */
-
-.card {
-  background-color: var(--slate-card);
-  border: 1px solid var(--border-soft);
-  padding: 2.5rem;
-  box-shadow: var(--shadow-soft);
-}
-/* ================================
-   GOLD ACCENT SYSTEM
-   ================================ */
-
-h2::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 3px;
-  margin-top: 0.75rem;
+.btn-primary {
   background-color: var(--gold-accent);
-}
-
-.section--light {
-  border-top: 1px solid var(--border-soft);
-  border-bottom: 1px solid var(--border-soft);
-}
-/* ================================
-   TEXT LOGO POLISH
-   ================================ */
-
-.brand-name {
-  letter-spacing: 0.03em;
-}
-
-.brand-tagline {
-  letter-spacing: 0.2em;
-  font-size: 0.75rem;
-}
-.brand img {
-  display: block;
-}
-/* ================================
-   HEADER – MODERN PROFESSIONAL
-   ================================ */
-
-.site-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid var(--border-soft);
-}
-
-.brand-name {
   color: var(--text-dark);
 }
 
-.brand-tagline {
-  color: var(--text-muted);
+.btn-primary:hover {
+  background-color: #c4a45a;
 }
 
-.nav a {
-  color: var(--text-dark);
-  font-weight: 500;
+.btn-outline {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
-.nav a:hover {
-  color: var(--blue-main);
+.btn-outline:hover {
+  background-color: rgba(255,255,255,0.1);
 }
 
 /* ================================
-   MODERN CONTENT CARDS
+   CARDS
    ================================ */
 
 .card {
@@ -346,9 +105,33 @@ h2::after {
 }
 
 .card h3 {
-  color: var(--text-dark);
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
 }
 
 .card p {
   color: var(--text-muted);
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+  background-color: var(--blue-main);
+  color: var(--text-light);
+  padding: 4rem 0 2rem;
+}
+
+footer h3 {
+  color: #ffffff;
+}
+
+footer p,
+footer a {
+  color: #dbe5ec;
+}
+
+footer a:hover {
+  color: var(--gold-accent);
 }
