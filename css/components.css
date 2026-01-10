@@ -213,3 +213,21 @@
   font-size: 1rem;
   font-weight: 600;
 }
+
+/* ================================
+   CTA BLOCK – PROFESSIONAL
+   ================================ */
+
+.cta-block {
+  text-align: center;
+}
+
+.cta-block p {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+}
